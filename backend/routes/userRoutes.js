@@ -1,0 +1,10 @@
+import express from "express";
+import authenticateToken from "../middleware/authenticateToken.js";
+const router=express.Router();
+import {register,login,getCoinPrice,checkAlerts,createAlert} from '../controllers/userController.js';
+router.post('/register',register);
+router.post('/login',login);
+router.get('/getCoinPrice/:coin_id',authenticateToken,getCoinPrice);
+router.get('/createAlert/:coin_id/:threshold',authenticateToken,createAlert);
+router.get('/checkAlerts',authenticateToken,checkAlerts);
+export default router;

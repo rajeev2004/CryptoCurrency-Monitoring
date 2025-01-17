@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+input{
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+button{
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.buttonclass{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.priceform{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
